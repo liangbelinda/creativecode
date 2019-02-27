@@ -9,6 +9,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  //1 vs 5 pattern
   digitalWrite(ledPin[0], HIGH);
   delay(500);
   digitalWrite(ledPin[0], LOW);
@@ -22,6 +23,7 @@ void loop() {
   }
   delay(1000);
 
+  //2 vs 4 pattern
   digitalWrite(ledPin[0], HIGH);
   digitalWrite(ledPin[1], HIGH);
   delay(500);
@@ -37,6 +39,7 @@ void loop() {
   }
   delay(1000);
 
+  //3 vs 3 pattern
   digitalWrite(ledPin[0], HIGH);
   digitalWrite(ledPin[1], HIGH);
   digitalWrite(ledPin[2], HIGH);
@@ -54,6 +57,7 @@ void loop() {
   }
   delay(1000);
 
+  //4 vs 2 pattern
   digitalWrite(ledPin[0], HIGH);
   digitalWrite(ledPin[1], HIGH);
   digitalWrite(ledPin[2], HIGH);
@@ -73,6 +77,7 @@ void loop() {
   }
   delay(1000);
 
+  //5 vs 1 pattern
   digitalWrite(ledPin[0], HIGH);
   digitalWrite(ledPin[1], HIGH);
   digitalWrite(ledPin[2], HIGH);
@@ -94,6 +99,7 @@ void loop() {
   }
   delay(1000);
 
+  //6 vs 0 pattern
   digitalWrite(ledPin[0], HIGH);
   digitalWrite(ledPin[1], HIGH);
   digitalWrite(ledPin[2], HIGH);
