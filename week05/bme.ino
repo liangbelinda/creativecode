@@ -59,22 +59,11 @@ void loop() {
     delay(delayTime);
 }
 
-float CtoF(float cel){
-  float farenheit = (cel * 1.8) + 32;
-  return farenheit;
-}
 
 void printValues() {
     Serial.print("Temperature = ");
-    float cel = bme.readTemperature();
     Serial.print(bme.readTemperature());
     Serial.println(" *C");
-    Serial.print(CtoF(cel));
-    Serial.println(" *F");
-    if ((CtoF(cel)) > 80){
-      tone(8, 298, 500);
-      delay(1000);
-    }
 
     Serial.print("Pressure = ");
 
